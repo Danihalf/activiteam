@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var express = require('express');
 var app = express();
 
@@ -13,3 +14,11 @@ var server = app.listen(1337, function () {
   console.log('Example app listening at http://%s:%s', host, port);
 
 });
+=======
+var http = require('http');
+var port = process.env.port || 1337;
+http.createServer(function (req, res) {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Hello Halif\n');
+}).listen(port);
+>>>>>>> origin/master
